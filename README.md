@@ -1,6 +1,11 @@
 # MovieCatalogue
 [![setyobagus01](https://circleci.com/gh/setyobagus01/MovieCatalogue.svg?style=svg)](https://circleci.com/gh/setyobagus01/MovieCatalogue)
 
+<a href="http://developer.android.com/index.html"><img alt="Platform" src="https://img.shields.io/badge/platform-Android-green.svg"></a>
+<a href="https://developer.android.com/studio/releases/gradle-plugin"><img alt="Gradle" src="https://img.shields.io/badge/gradle-4.1.3-green.svg"></a>
+<a href="http://kotlinlang.org"><img alt="Kotlin" src="https://img.shields.io/badge/kotlin-1.4.31-blue.svg"></a>
+<a href="https://circleci.com/gh/setyobagus01/MovieCatalogue/"><img alt="Circle CI" src="https://circleci.com/gh/setyobagus01/MovieCatalogue.svg?style=shield"></a>
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Mad Scorecard](#mad-scorecard)
