@@ -7,7 +7,7 @@ orbs:
   android: circleci/android@1.0.3
   vulnachecka: whitesource/vulnerability-checker@19.5.5
   prettier: cfra/prettier@0.1.1
-  codecov: codecov/codecov@1.0.2
+  codecov: codecov/codecov@1.2.3
 
 jobs:
   build:
