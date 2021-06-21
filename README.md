@@ -5,7 +5,7 @@
 - [Mad Scorecard](#mad-scorecard)
 
 
-## MAD Score
+## MAD Scorecard
 ### Summary
 ![alt text](https://github.com/setyobagus01/MovieCatalogue/blob/master/assets/summary.png?raw=true)
 
