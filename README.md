@@ -1,4 +1,11 @@
 # MovieCatalogue
 [![setyobagus01](https://circleci.com/gh/setyobagus01/MovieCatalogue.svg?style=svg)](https://circleci.com/gh/setyobagus01/MovieCatalogue)
 
+## MAD Score
+### Summary
 ![alt text](https://github.com/setyobagus01/MovieCatalogue/blob/master/assets/summary.png?raw=true)
+
+### Jetpack
+![alt text](https://github.com/setyobagus01/MovieCatalogue/blob/master/assets/jetpack.png?raw=true)
+
+
