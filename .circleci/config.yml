@@ -11,8 +11,6 @@ jobs:
   build:
     executor: android/android
     steps:
-      - codecov/upload:
-          file: coverage.xml
       - checkout
       - restore_cache:
           key: android-orb-v1-
@@ -44,6 +42,7 @@ workflows:
   # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows
   build-and-test: 
     jobs:
+      - build
       - vulnachecka/scan
 
 
