@@ -1,0 +1,11 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+  <color name="primaryColor">#212121</color>
+  <color name="primaryLightColor">#484848</color>
+  <color name="primaryDarkColor">#181717</color>
+  <color name="secondaryColor">#212121</color>
+  <color name="secondaryDarkColor">#181717</color>
+  <color name="primaryTextColor">#ffffff</color>
+  <color name="secondaryTextColor">#CCFFFFFF</color>
+  <color name="placeholderColor">#454545</color>
+</resources>

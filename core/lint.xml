@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/poster_a_start_is_born.jpg" />
+        <ignore path="src/main/res/drawable/poster_a_start_is_born.jpg" />
+        <ignore path="src/main/res/drawable/poster_a_start_is_born.jpg" />
+        <ignore path="src/main/res/drawable/poster_a_start_is_born.jpg" />
+        <ignore path="src/main/res/drawable/poster_arrow.jpg" />
+        <ignore path="src/main/res/drawable/poster_arrow.jpg" />
+        <ignore path="src/main/res/drawable/poster_arrow.jpg" />
+    </issue>
+</lint>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dummy_title">Title</string>
+    <string name="dummy_genres"><![CDATA[Crime, Drama, Mystery, Action & Adventure]]></string>
+    <string name="overview">Overview</string>
+    <string name="dummy_overview">Between personal obligations and training for his next big fight against an opponent with ties to his family\'s past, Adonis Creed is up against the challenge of his life."</string>
+
+    <string name="share">Share</string>
+    <string name="user_score">User Score</string>
+    <string name="motto">Slightly less better than IMDB</string>
+    <string name="year">2020</string>
+    <string name="image_movie_poster">Image Movie Poster</string>
+    <string name="image_tv_show_poster">Image Tv Show Poster</string>
+</resources>

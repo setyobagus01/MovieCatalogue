@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/primaryColor"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="126dp"
+            android:layout_height="189dp"
+            android:background="@color/placeholderColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/image_poster_catalogue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="140dp" />
+
+        <TextView
+            android:id="@+id/release_date"
+            style="@style/Theme.MovieCatalogue.Content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:layout_width="50dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/movie_title"
+            android:background="@color/placeholderColor" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Theme.MovieCatalogue.Title"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="152dp"
+            android:background="@color/placeholderColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/release_date" />
+
+        <TextView
+            android:id="@+id/overview"
+            style="@style/Theme.MovieCatalogue.Content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:background="@color/placeholderColor"  />
+
+
+        <TextView
+            android:id="@+id/overview2"
+            style="@style/Theme.MovieCatalogue.Content"
+            android:layout_width="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/placeholderColor"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintEnd_toEndOf="@+id/overview"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/overview" />
+
+        <TextView
+            android:id="@+id/overview3"
+            style="@style/Theme.MovieCatalogue.Content"
+            android:layout_width="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/placeholderColor"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintEnd_toEndOf="@+id/overview2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/overview2"
+            app:layout_constraintTop_toBottomOf="@+id/overview2" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            style="@style/Theme.MovieCatalogue.Title"
+            android:layout_width="100dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/placeholderColor" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

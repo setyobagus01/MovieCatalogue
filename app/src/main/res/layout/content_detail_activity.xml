@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    style="@style/Theme.MovieCatalogue.Background"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Theme.MovieCatalogue.Title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/user_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/content_score"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/content_score"
+        style="@style/Theme.MovieCatalogue.Title"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="69" />
+
+    <TextView
+        android:id="@+id/content_duration"
+        style="@style/Theme.MovieCatalogue.Title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toTopOf="@+id/content_overview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="2h 15m" />
+
+    <TextView
+        android:id="@+id/content_tagline"
+        style="@style/Theme.MovieCatalogue.Title"
+        android:layout_width="300dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_italic"
+        android:textColor="@color/secondaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="An angel falls. A warrior rises." />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Theme.MovieCatalogue.Title"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/overview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_tagline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/content_overview"
+        style="@style/Theme.MovieCatalogue.Content"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:letterSpacing="0.05"
+        android:lineSpacingExtra="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:text="@string/dummy_overview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
