@@ -5,6 +5,10 @@
 - [Mad Scorecard](#mad-scorecard)
 
 
+## Introduction
+VacIO Android App, is a catalogue for movies & tv show build with kotlin and this application for Dicoding: Menjadi Android Developer Expert Submission
+
+
 ## MAD Scorecard
 ### Summary
 ![alt text](https://github.com/setyobagus01/MovieCatalogue/blob/master/assets/summary.png?raw=true)
