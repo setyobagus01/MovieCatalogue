@@ -9,6 +9,11 @@
 ## Introduction
 VacIO Android App, is a catalogue for movies & tv show build with kotlin and I'm using [api.themoviedb.org](https://api.themoviedb.org/). This application is built for Dicoding: Menjadi Android Developer Expert Submission.
 
+## Installation
+- In your Android Studio go to File > Project from Version Control
+- add to URL: https://github.com/setyobagus01/MovieCatalogue.git
+- Clone
+
 ## Features
 - Movie List
 - Tv Show List
