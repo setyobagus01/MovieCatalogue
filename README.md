@@ -8,6 +8,9 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Installation](#installation)
+- [Features](#features)
+- [Technologies](#technologies)
 - [Mad Scorecard](#mad-scorecard)
 
 
