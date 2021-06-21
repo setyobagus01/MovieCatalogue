@@ -18,8 +18,11 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
+    }
+
+    lintOptions {
+        abortOnError false
     }
 
     buildTypes {
@@ -51,9 +54,6 @@ android {
             }
         }
     }
-    testOptions {
-        unitTests.returnDefaultValues = true
-    }
     dynamicFeatures = [':favorite']
 }
 
@@ -69,8 +69,4 @@ dependencies {
     api("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
 
     implementation "com.facebook.shimmer:shimmer:$shimmer_version"
-}
-
-kapt {
-    correctErrorTypes true
 }
