@@ -18,16 +18,20 @@ android {
         versionCode 1
         versionName "1.0"
 
+        buildConfigField("String", "API_KEY", '"83a2f499178d1c455f516b143ae5c4ec"')
+        buildConfigField("String", "BASE_URL", '"https://api.themoviedb.org/3/"')
+        buildConfigField("String", "HOSTNAME", '"api.themoviedb.org"')
+        buildConfigField("String", "CERT_PIN", '"sha256/+vqZVAzTqUP8BGkfl88yU7SQ3C8J2uNEa55B7RZjEg0="')
+
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         debug {
-            def localProperties = new Properties()
-            localProperties.load(new FileInputStream(rootProject.file("local.properties")))
-            buildConfigField "String", "API_KEY", localProperties.getProperty("apiKey")
-            buildConfigField "String", "BASE_URL", localProperties.getProperty("baseURL")
+
+
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -54,9 +58,6 @@ dependencies {
 
     //noinspection DifferentStdlibGradleVersion
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     //lifecycle
     api "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"

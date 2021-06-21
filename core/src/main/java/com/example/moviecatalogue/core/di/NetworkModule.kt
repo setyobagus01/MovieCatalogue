@@ -26,9 +26,8 @@ class NetworkModule {
 
     @Provides
     fun provideClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
-        val hostname = "api.themoviedb.org"
         val certificatePinner = CertificatePinner.Builder()
-            .add(hostname, "sha256/+vqZVAzTqUP8BGkfl88yU7SQ3C8J2uNEa55B7RZjEg0=")
+            .add(BuildConfig.HOSTNAME, BuildConfig.CERT_PIN)
             .build()
         return OkHttpClient.Builder().addInterceptor(loggingInterceptor)
             .connectTimeout(120, TimeUnit.SECONDS)
