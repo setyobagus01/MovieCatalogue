@@ -61,12 +61,8 @@ class TvShowFavoriteFragment : Fragment() {
         if (activity != null) {
             tvShowsAdapter = TvShowFavoriteAdapter()
             viewModel.favoriteTvShows.observe(viewLifecycleOwner, { tvShows ->
-                if (tvShows.isNotEmpty()) {
-                    binding.noData.visibility = View.GONE
-                    tvShowsAdapter?.submitList(tvShows)
-                } else {
-                    binding.noData.visibility = View.VISIBLE
-                }
+                tvShowsAdapter?.submitList(tvShows)
+                binding.noData.visibility = if (tvShows.isNotEmpty()) View.GONE else View.VISIBLE
 
             })
             with(binding.rvTvShowFavorite) {
@@ -106,7 +102,7 @@ class TvShowFavoriteFragment : Fragment() {
                     val tvShow = tvShowsAdapter?.getSwipedData(swipedPosition)
                     tvShow?.let { viewModel.setFavoriteTvShow(it) }
 
-                    val snackbar = Snackbar.make(view as View, "Undo Delete", Snackbar.LENGTH_SHORT)
+                    val snackbar = Snackbar.make(view as View, "Undo Delete", Snackbar.LENGTH_LONG)
                     snackbar.setAction("Ok") { v ->
                         tvShow?.let { viewModel.setFavoriteTvShow(it) }
                     }
